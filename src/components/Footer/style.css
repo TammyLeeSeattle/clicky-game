@@ -1,0 +1,13 @@
+footer {
+  background-color: rgb(2, 0, 97);
+  color: whitesmoke;
+}
+
+.footer-img {
+  height: 30px;
+  padding-left: 10px;
+}
+  
+p {
+  font-weight: bold;
+}
