@@ -7,14 +7,14 @@ function Navbar(props) {
     return (
       <header className="d-flex">
         <nav className="navbar navbar-expand-md navbar-light fixed-top nav-theme navbar-header row text-center justify-content-around text-white">
-          <div className="col-4">
+          <div className="col-5">
             <h2 className="col"><a href="/">Lord of the Clicks</a></h2>
           </div>
-          <div className="col-4">
-            <h2 className="col">{props.message}</h2>
+          <div className="col-2">
+            <h2 className="col message">{props.winlossmessage}</h2>
           </div>
-          <div className="col-4">
-            <h2 className="col"><ScoreDisplay score={props.score} highScore={props.highScore}/></h2>
+          <div className="col-5">
+            <h2 className="col"><ScoreDisplay score={props.currentScore} highScore={props.topScore}/></h2>
           </div>
         </nav>
       </header>

@@ -89,7 +89,7 @@ class App extends Component {
 
         <Navbar
           currentScore={this.state.currentScore}
-          topScore={this.state.highScore}
+          topScore={this.state.topScore}
           winlossmessage={this.state.winlossmessage}
         />
         
@@ -97,6 +97,7 @@ class App extends Component {
 
         <Container fluid>
 
+          <Row>
             {this.state.characters.map(character => (
               <CharacterTile 
                 image={character.image}
@@ -106,6 +107,7 @@ class App extends Component {
                 onClick={this.handleClick}
               />
             ))}
+          </Row>
 
         </Container>
 
